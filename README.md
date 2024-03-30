@@ -7,8 +7,8 @@ This project AWS project features Kafka producer and consumer applications on EC
 
 ### Kafka Producer & Consumer Applications
 
-- **Producer**: EC2 instances host a Kafka producer application responsible for generating and publishing data streams to specified Kafka topics.
-- **Consumer**: Another set of EC2 instances run a Kafka consumer application, subscribing to Kafka topics, consuming the data, and transferring it to downstream components.
+- **Producer**: EC2 instances host a Python-based Kafka producer application responsible for generating and publishing data streams to specified Kafka topics.
+- **Consumer**: Another set of EC2 instances run a Python-based Kafka consumer application, subscribing to Kafka topics, consuming the data, and transferring it to downstream components.
 
 The following image shows the producer application generating messages using the data from the dataset:
 <img width="1280" alt="Screenshot (65)" src="https://github.com/githar5h/AWS-Kafka-Data-Engineering/assets/96515805/a2a6f8fa-04eb-4191-bca1-dfdd8322a61a">
@@ -40,6 +40,14 @@ The following image shows the Glue ETL job:
 
 - **Querying**: Once the schema is cataloged, users can leverage Amazon Athena to query and analyze the data stored in the datalake. Athena provides a serverless, interactive query service that allows users to analyze large datasets with standard SQL queries.
 - **Ad-hoc Analysis**: With Athena, users can perform ad-hoc analysis, generate reports, and gain insights from the data without the need for complex infrastructure setup.
+
+### Tech Stack
+Kafka: Streaming data ingestion
+S3: Data storage and staging
+Glue: ETL processing and schema detection
+Athena: Querying and analysis
+Python: Language used for Kafka producer and consumer applications
+CloudWatch: Monitoring and management of EC2 instances
 
 ## Getting Started
 
