@@ -42,12 +42,12 @@ The following image shows the Glue ETL job:
 - **Ad-hoc Analysis**: With Athena, users can perform ad-hoc analysis, generate reports, and gain insights from the data without the need for complex infrastructure setup.
 
 ### Tech Stack
-Kafka: Streaming data ingestion
-S3: Data storage and staging
-Glue: ETL processing and schema detection
-Athena: Querying and analysis
-Python: Language used for Kafka producer and consumer applications
-CloudWatch: Monitoring and management of EC2 instances
+- Kafka: Streaming data ingestion
+- Python: Language used for Kafka producer and consumer applications
+- S3: Data storage and staging
+- Glue: ETL processing and schema detection
+- Athena: Querying and analysis
+- CloudWatch: Monitoring and management of EC2 instances
 
 ## Getting Started
 
