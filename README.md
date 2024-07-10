@@ -49,6 +49,13 @@ The following image shows the Glue ETL job:
 - Athena: Querying and analysis
 - CloudWatch: Monitoring and management of EC2 instances
 
+### Project Difficulties Encountered
+
+1. **EC2 Key Issue**: The EC2 key was initially not accepted, requiring a change in file permissions on Windows to resolve the issue.
+2. **SSH Connection Timeout**: SSH connections were frequently timing out, so I opted to use WinSCP instead, which saved significant debugging time.
+3. **WinSCP Reconnection**: While using WinSCP, frequent reconnections were necessary, which turned out to be beneficial since the GUI of WinSCP supports retries that direct SSH connections do not.
+4. **Kafka Consumer Write Failure**: The Kafka consumer was unable to write to the EC2 instance due to bucket permissions. Enabling ACL on the bucket resolved this issue.
+
 ## Getting Started
 
 To deploy and run the data pipeline in your AWS environment, follow these steps:
